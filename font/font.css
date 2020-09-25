@@ -1,0 +1,56 @@
+@font-face { 
+	font-family: 'NotoKr-Thin';
+	font-style: normal;
+	font-weight: 100;
+	src: url(./NotoKr-Thin.eot) format('eot'), 
+	url(./NotoKr-Thin.woff) format('woff');
+}
+
+ @font-face { 
+	font-family: 'NotoKr-Light';
+	font-style: normal;
+	font-weight: 200;
+	src: url(./NotoKr-Light.eot) format('eot'), 
+	url(./NotoKr-Light.woff) format('woff');
+}
+@font-face { 
+	font-family: 'NotoKr-DemiLight';
+	font-style: normal;
+	font-weight: 300;
+	src: url(./NotoKr-DemiLight.eot) format('eot'), 
+	url(./NotoKr-DemiLight.woff) format('woff'),
+	url(./NotoKr-DemiLight.woff) format('woff2');
+}
+
+ @font-face { 
+	font-family: 'NotoKr-Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: url(./NotoKr-Regular.eot) format('eot'), 
+	url(./NotoKr-Regular.woff) format('woff');
+}
+
+ @font-face { 
+	font-family: 'NotoKr-Medium';
+	font-style: normal;
+	font-weight: 500;
+	src: url(./NotoKr-Medium.eot) format('eot'), 
+	url(./NotoKr-Medium.woff) format('woff');
+}
+
+ @font-face { 
+	font-family: 'NotoKr-Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: url(./NotoKr-Bold.eot) format('eot'), 
+	url(./NotoKr-Bold.woff) format('woff');
+}
+
+ @font-face { 
+	font-family: 'NotoKr-Black';
+	font-style: normal;
+	font-weight: 900;
+	src: url(./NotoKr-Black.eot) format('eot'), 
+	url(./NotoKr-Black.woff) format('woff');
+}
+

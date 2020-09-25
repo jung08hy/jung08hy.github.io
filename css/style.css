@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@import url(../font/font.css);
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, span, form, fieldset, input, select, label, textarea, table, caption, thead, tfoot, tbody, tr, th, td
+{margin:0;padding:0;font:16px/1.5 'NotoKr-Regular','나눔고딕','NanumGothic-Regular','맑은고딕','Malgun Gothic',Sans-serif;color:#333}
+b, span, strong, input, a, button{font-size:inherit;font-family:inherit;color:inherit}
+article, aside, dialog, footer, header, section, footer, nav, figure, hgroup, details, summary, figure, figcaption {display: block;}
+cite{display:inline}
+html, body {height:100%;} 
+body {margin:0px;background:#fff}
+a:link {text-decoration:none;} 
+a:visited {text-decoration:none;}
+a:hover{opacity:0.8}
+img{border:0;}
+label, input, textarea, select{vertical-align:middle}
+ol, ul{list-style:none;} 
+table{border-collapse:collapse;table-layout:fixed;}
+fieldset{border:none}
+.skip, hr, legend{position:absolute;left:-1000%;width:1px;height:1px;font-size:0;line-height:0;overflow:hidden;}
+button{margin:0;padding:0;border:none;background:none;outline:none;cursor:pointer;display:inline-block;}
+body { font-family: 'NotoKr-Regular'; font-size:13px;}
+#wrap { min-width:320px}
+
+
+header { background:#000; height:100vh;position: relative}
+header button {width: 30px;height: 30px;background: rgba(0,0,0,0.9)url(../images/my.png)no-repeat center;background-size: 25px;position: fixed; right: 30px;top: 9px;padding: 30px;border-radius: 50%;z-index: 99}
+header button:hover{opacity: 0.8}
+header .head_inner {border: 3px solid #fff;width: 90%;height: 80vh;position: absolute;left: 0;right: 0;top: 50%;margin:-40vh auto 0}
+header .head_inner h1 {color: #ffdf00;font-size: 15px;font-family: 'NotoKr-Medium';padding: 10px 20px}
+header .head_inner p.info {font-size: 25px;display: block;text-align: center;color: #fff;font-size: 28px;width: 413px;height: 84px;position: absolute;left: 0;right: 0;margin: 0 auto;top: 50%;margin-top: -42px; word-break: keep-all}
+p.sub_title{font-size:18px;position: relative;top: 20px;}
+p.sub_title span{color:#fe2a2a}
+h2 {font-weight: bold;font-size: 80px;letter-spacing: 5px}
+.top_title {margin: 30px 0}
+#footer { clear:both; background:#e1dad4;}
+.foot_inner { max-width:1100px; margin:0 auto; position:relative; padding:30px 0 40px}
+.scrollBtnArea { position: absolute;bottom: 2%;width: 100%;color: #fff;text-align: center}
+
+/*PORTFOLLO*/
+.con_inner { max-width:1100px; margin:0 auto;}
+.floatbox { margin-top:25px;overflow: hidden}
+.list_area .list_ul li {width: 32.3%;float: left;position: relative; margin: 0 0.6% 14px;}
+.list_area .list_ul li:nth-child(3n) {margin-right:0;}
+.list_area .list_ul li  thumb{height:0;overflow:hidden;position:absolute;left:0;bottom:119px;z-index:2;}
+.tab ul{text-align: center}
+.tab ul li{display: inline-block;margin-bottom:30px;transition: .3s}
+.tab ul li:after {content: "|";padding: 0 10px 0 15px;position: relative;top: -3px;}
+.tab ul li:last-child:after{display: none}
+.tab ul li a{font-size:20px}
+.tab ul li a:hover{color:#972323}
+
+.project{position:relative;display:inline-block;background-color:#000; background-size:cover;overflow:hidden;vertical-align: top;color:#fff;transition: all 0.4s ease-out;width: 100%}
+.project img{width:100%}
+.project .area {position: absolute;top: 10px;left:10px}
+.project .area p{color:#fff;font-size:13px;font-family: 'NotoKr-Light';}
+.project .area.black p { color: #000}
+.project .text_info {text-align: center;color: #fff;position: absolute;top: 115px;width:100%;height:calc(53%);color:#fff}
+.project .text_info dl{padding:0; opacity:0;transition: all 0.6s ease-in-out}
+.project .text_info dl dd{color:#fff}
+.project .text_info dl dd:first-child{padding-bottom:10px}
+.project .text_info dl dd > a.btn{display: inline-block;border:1px solid #ffdf00;background:#ffdf00;color:#1b1b1b;padding:3px 10px;border-radius: 30px;margin-top:20px}
+.project .text_info dl dd > a.btn.site{background:#FF002E;border:1px solid #FF002E;color:#fff}
+.project .text_info dl dd >button{display: inline-block;border-radius: 30px;padding: 3px 10px;margin-top:10px}
+.project .text_info dl dd >button.image{background:#a490e4;border:1px solid #a490e4;color:#fff;}
+.project .text_info dl dd >button.tabel-c{background:#ffdf00;border:1px solid #ffdf00;color:#333}
+.project .text_info p{color: #fff;}
+.project .text_info p.animate-text{	transform: translateY(200px);transition-delay: 0.2s;color:#FFDF00;padding-top: 5px;}
+.project:hover img{opacity: 0.1}
+.project:hover .animate-text{transform:translateY(0); opacity:1}
+.project:hover .area.black p { color: #fff}
+
+/*팝업창*/
+.pop {position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.5);z-index: 1000;display: none}
+.pop_ct {position: absolute;top: 5%;left: 0;right: 0;width: 60%;height: 90vh;overflow-y: hidden;box-sizing: border-box;padding: 10px 10px 30px 10px;margin: 0 auto;background: #fff;z-index: 99999}
+.pop_ct h3 {color: #151515;font-size: 20px;padding-bottom: 10px;border-bottom: 1px solid #ddd;font-family: 'NotoKr-Regular'}
+.pop_close { position: absolute;top: 12px;right: 21px;display: block;width: 25px;height: 25px;background: url(../images/close.png) no-repeat center;background-size: 50%;font-size: 0;cursor: pointer}
+.ct_area{height:92%;overflow-y: auto;padding:20px 10px;background:#f4f4f4}
+.ct_area > div{width:90%;margin:0 auto;text-align: center;margin-bottom:20px}
+.ct_area > div img{width:100%;box-shadow: 1px 8px 13px rgba(0, 0, 0, 0.3)}
+.ct_area::-webkit-scrollbar { width: 8px; border-radius:5px }
+.ct_area::-webkit-scrollbar-track { background-color: #ccc; }
+.ct_area::-webkit-scrollbar-thumb { background-color: #555; }
+.ct_area::-webkit-scrollbar-button { display: none; }
+
+/*테이블*/
+.ct_area > div.table_area {width: 100%;padding-bottom: 30px;}
+table{width:100%;}
+table tr td{border:1px solid #ccc;text-align: left;padding:10px;}
+table tr td a{color:#1A73E8;}
+table tr td a:hover{border-bottom:1px solid #1A73E8}
+/*소개*/
+.pop_my{display: block}
+.pop_ct.pop_cy_my {height: 640px}
+.contact {margin-top: 8%;overflow-y: auto;height: 100%}
+.contact p.name{word-break: keep-all;text-align: center;padding:30px 10px 50px;font-size:20px}
+.contact p.name span{color:#333;font-size:16px}
+.contact p.name span em{font-style:normal;color:#bc48d1;font-family: 'NotoKr-Medium'}
+.contact p.photo {width: 250px;height: 250px;border-radius: 50%;overflow: hidden;text-align: center;margin:0 auto}
+.contact p.photo img{width:100%;height:100%}
+.contact ul{overflow: hidden}
+.contact ul li{float:left;width:50%;text-align: center}
+.contact ul li span {display: inline-block; padding: 10px 10px 10px 40px}
+.contact ul li.email span {background: url(../images/mail.png)no-repeat 0 center; background-size: 30px;}
+.contact ul li.phone span{background:url(../images/tel.png)no-repeat 0 center;background-size: 30px}
+
+
+
+@media (max-width:768px){
+	.pop_ct {width: 90%}
+	.list_area .list_ul li {width: 48.7%}
+}
+@media (max-width:414px){
+	header .head_inner p.info {font-size: 26px;width: 100%}
+	.foot_inner {max-width:100%;padding: 40px 0}
+	.copy {text-align: center;font-size: 13px}
+	h2 {font-size: 50px;margin-top: 13px}
+	.top_title {margin: 30px 15px}	
+	.list_area .list_ul li {width: 100%}
+	.project .area p {font-size: 15px;font-family: 'NotoKr-Medium'}
+	.project .text_info {top: 36%}
+	.pop_ct.pop_cy_my {height:90vh}	
+	.contact p.photo {width: 200px;height: 200px}
+	.contact ul li {float: auto;width: 100%;text-align: left;padding:0 40px}
+}
+
+@media (max-width:375px){
+	.contact ul li {padding:0 30px}
+}
+
+@media (max-width:320px){
+	.pop_ct {height: 520px;}
+	.contact p.photo {width: 100px;height: 100px;}
+	.contact p.name {font-size:16px}
+	.contact p.name span {font-size: 13px}
+	.contact ul li {padding: 0}
+	.contact ul li.email span {background-size: 20px}
+	.contact ul li.phone span {background-size: 20px}
+	.contact ul li.phone span b{font-size:13px}
+}
+
+
+
+:root{--animate-duration:1s;--animate-delay:1s;--animate-repeat:1}
+.animate__animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-duration:var(--animate-duration);animation-duration:var(--animate-duration);-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.animate__animated.animate__infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
+.animate__animated.animate__delay-1s{-webkit-animation-delay:1s;animation-delay:1s;-webkit-animation-delay:var(--animate-delay);animation-delay:var(--animate-delay)}
+.animate__animated.animate__delay-2s{-webkit-animation-delay:2s;animation-delay:2s;-webkit-animation-delay:calc(var(--animate-delay)*2);animation-delay:calc(var(--animate-delay)*2)}
+.animate__animated.animate__delay-3s{-webkit-animation-delay:3s;animation-delay:3s;-webkit-animation-delay:calc(var(--animate-delay)*3);animation-delay:calc(var(--animate-delay)*3)}
+.animate__animated.animate__delay-4s{-webkit-animation-delay:4s;animation-delay:4s;-webkit-animation-delay:calc(var(--animate-delay)*4);animation-delay:calc(var(--animate-delay)*4)}
+.animate__animated.animate__delay-5s{-webkit-animation-delay:5s;animation-delay:5s;-webkit-animation-delay:calc(var(--animate-delay)*5);animation-delay:calc(var(--animate-delay)*5)}
+.animate__animated.animate__faster{-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-duration:calc(var(--animate-duration)/2);animation-duration:calc(var(--animate-duration)/2)}
+.animate__animated.animate__fast{-webkit-animation-duration:.8s;animation-duration:.8s;-webkit-animation-duration:calc(var(--animate-duration)*0.8);animation-duration:calc(var(--animate-duration)*0.8)}
+.animate__animated.animate__slow{-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-duration:calc(var(--animate-duration)*2);animation-duration:calc(var(--animate-duration)*2)}
+.animate__animated.animate__slower{-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-duration:calc(var(--animate-duration)*3);animation-duration:calc(var(--animate-duration)*3)}
+@media (prefers-reduced-motion:reduce),print{
+	.animate__animated{-webkit-animation-duration:1ms!important;animation-duration:1ms!important;-webkit-transition-duration:1ms!important;transition-duration:1ms!important;-webkit-animation-iteration-count:1!important;animation-iteration-count:1!important}
+	.animate__animated[class*=Out]{opacity:0}
+}
+@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}
+@keyframes fadeIn{0%{opacity:0}to{opacity:1}}
+.animate__fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}
+.animate__animated.animate__pulse {--animate-duration: 2s}/*속도*/
